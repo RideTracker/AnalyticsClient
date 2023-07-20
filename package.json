@@ -1,0 +1,16 @@
+{
+    "name": "@ridetracker/analyticsclient",
+    "description": "A TypeScript package to provide a low-level API client for AnalyticsService.",
+    "version": "0.9.0",
+    "main": "dist/index.js",
+    "private": true,
+    "scripts": {
+        "build": "npx tsc"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "devDependencies": {
+        "typescript": "^5.1.6"
+    }
+}
