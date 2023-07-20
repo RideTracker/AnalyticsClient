@@ -1,8 +1,8 @@
-import { AuthClient, AuthClientToken, RequestMethod } from "@ridetracker/authclient";
+import { AuthClient, AuthClientToken, RequestMethod, Fetcher } from "@ridetracker/authclient";
 
 export default class AnalyticsClient extends AuthClient {
-    constructor(host: string, token?: AuthClientToken) {
-        super("AnalyticsClient-0.9.0", host, token);
+    constructor(host: string, token?: AuthClientToken, fetcher?: Fetcher) {
+        super("AnalyticsClient-0.9.0", host, token, fetcher);
     };
 
     static async request<T = any>(client: AnalyticsClient, method: RequestMethod, url: URL, initialHeaders?: Record<string, string>, body?: BodyInit | undefined): Promise<T> {
